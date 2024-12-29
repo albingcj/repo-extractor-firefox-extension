@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GitHub File Tree Generator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>GitHub File Tree</h1>
+            <button id="copy-btn" title="Copy to Clipboard">📋</button>
+        </div>
+
+        <div class="file-tree-container">
+            <div id="error" class="error"></div>
+            <div id="loading" class="loading">Loading...</div>
+            <pre id="file-tree">
+        </pre>
+        </div>
+        <div id="copy-success" class="copy-success"
+            style="display: none;">Copied!</div>
+        <script src="popup.js"></script>
+    </body>
+</html>
